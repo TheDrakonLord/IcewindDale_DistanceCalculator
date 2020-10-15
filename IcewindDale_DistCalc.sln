@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IcewindDale_DistCalc", "IcewindDale_DistCalc\IcewindDale_DistCalc.csproj", "{2728F75E-35BE-48C5-A6C4-ED369C5D51CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2728F75E-35BE-48C5-A6C4-ED369C5D51CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2728F75E-35BE-48C5-A6C4-ED369C5D51CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2728F75E-35BE-48C5-A6C4-ED369C5D51CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2728F75E-35BE-48C5-A6C4-ED369C5D51CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D19AA26F-3401-46F7-BF66-C85FBFC08A75}
+	EndGlobalSection
+EndGlobal
