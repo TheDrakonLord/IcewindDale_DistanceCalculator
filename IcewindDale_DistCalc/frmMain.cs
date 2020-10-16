@@ -280,8 +280,8 @@ namespace IcewindDale_DistCalc
             radTundra.Checked = true;
             radDogsled.Checked = true;
             radResting.Checked = true;
-            radMiles.Checked = true;
             radLiving.Checked = true;
+            radPlayerHealthy.Checked = true;
             radOriginDougansHole.Checked = true;
             radDestDougansHole.Checked = true;
             radNormal.Checked = true;
@@ -704,21 +704,25 @@ namespace IcewindDale_DistCalc
         private void radLiving_CheckedChanged(object sender, EventArgs e)
         {
             _undead = false;
+            calculateDistance();
         }
 
         private void radUndead_CheckedChanged(object sender, EventArgs e)
         {
             _undead = true;
+            calculateDistance();
         }
 
         private void radPlayerHealthy_CheckedChanged(object sender, EventArgs e)
         {
             _playerExhausted = false;
+            calculateDistance();
         }
 
         private void radPlayerExhausted_CheckedChanged(object sender, EventArgs e)
         {
             _playerExhausted = true;
+            calculateDistance();
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)

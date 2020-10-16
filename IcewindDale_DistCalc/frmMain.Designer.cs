@@ -31,7 +31,6 @@
             this.gbxTerrain = new System.Windows.Forms.GroupBox();
             this.gbxMethod = new System.Windows.Forms.GroupBox();
             this.gbxResting = new System.Windows.Forms.GroupBox();
-            this.gbxScale = new System.Windows.Forms.GroupBox();
             this.gbxOrigin = new System.Windows.Forms.GroupBox();
             this.gbxDestination = new System.Windows.Forms.GroupBox();
             this.gbxResults = new System.Windows.Forms.GroupBox();
@@ -44,8 +43,6 @@
             this.radUnaided = new System.Windows.Forms.RadioButton();
             this.radResting = new System.Windows.Forms.RadioButton();
             this.radUnrested = new System.Windows.Forms.RadioButton();
-            this.radMiles = new System.Windows.Forms.RadioButton();
-            this.radFeet = new System.Windows.Forms.RadioButton();
             this.radOriginDougansHole = new System.Windows.Forms.RadioButton();
             this.radOriginGoodMead = new System.Windows.Forms.RadioButton();
             this.radOriginIntersection = new System.Windows.Forms.RadioButton();
@@ -94,7 +91,6 @@
             this.gbxTerrain.SuspendLayout();
             this.gbxMethod.SuspendLayout();
             this.gbxResting.SuspendLayout();
-            this.gbxScale.SuspendLayout();
             this.gbxOrigin.SuspendLayout();
             this.gbxDestination.SuspendLayout();
             this.gbxResults.SuspendLayout();
@@ -138,17 +134,6 @@
             this.gbxResting.TabIndex = 2;
             this.gbxResting.TabStop = false;
             this.gbxResting.Text = "Resting";
-            // 
-            // gbxScale
-            // 
-            this.gbxScale.Controls.Add(this.radFeet);
-            this.gbxScale.Controls.Add(this.radMiles);
-            this.gbxScale.Location = new System.Drawing.Point(13, 322);
-            this.gbxScale.Name = "gbxScale";
-            this.gbxScale.Size = new System.Drawing.Size(86, 71);
-            this.gbxScale.TabIndex = 3;
-            this.gbxScale.TabStop = false;
-            this.gbxScale.Text = "Scale";
             // 
             // gbxOrigin
             // 
@@ -319,30 +304,6 @@
             this.radUnrested.Text = "No";
             this.radUnrested.UseVisualStyleBackColor = true;
             this.radUnrested.CheckedChanged += new System.EventHandler(this.radUnrested_CheckedChanged);
-            // 
-            // radMiles
-            // 
-            this.radMiles.AutoSize = true;
-            this.radMiles.Location = new System.Drawing.Point(7, 20);
-            this.radMiles.Name = "radMiles";
-            this.radMiles.Size = new System.Drawing.Size(49, 17);
-            this.radMiles.TabIndex = 0;
-            this.radMiles.TabStop = true;
-            this.radMiles.Text = "Miles";
-            this.radMiles.UseVisualStyleBackColor = true;
-            this.radMiles.CheckedChanged += new System.EventHandler(this.radMiles_CheckedChanged);
-            // 
-            // radFeet
-            // 
-            this.radFeet.AutoSize = true;
-            this.radFeet.Location = new System.Drawing.Point(7, 44);
-            this.radFeet.Name = "radFeet";
-            this.radFeet.Size = new System.Drawing.Size(46, 17);
-            this.radFeet.TabIndex = 1;
-            this.radFeet.TabStop = true;
-            this.radFeet.Text = "Feet";
-            this.radFeet.UseVisualStyleBackColor = true;
-            this.radFeet.CheckedChanged += new System.EventHandler(this.radFeet_CheckedChanged);
             // 
             // radOriginDougansHole
             // 
@@ -654,9 +615,9 @@
             this.gbxPace.Controls.Add(this.radFast);
             this.gbxPace.Controls.Add(this.radNormal);
             this.gbxPace.Controls.Add(this.radSlow);
-            this.gbxPace.Location = new System.Drawing.Point(13, 400);
+            this.gbxPace.Location = new System.Drawing.Point(12, 323);
             this.gbxPace.Name = "gbxPace";
-            this.gbxPace.Size = new System.Drawing.Size(86, 100);
+            this.gbxPace.Size = new System.Drawing.Size(86, 89);
             this.gbxPace.TabIndex = 7;
             this.gbxPace.TabStop = false;
             this.gbxPace.Text = "Pace";
@@ -752,9 +713,9 @@
             // 
             this.gbxUndead.Controls.Add(this.radUndead);
             this.gbxUndead.Controls.Add(this.radLiving);
-            this.gbxUndead.Location = new System.Drawing.Point(106, 415);
+            this.gbxUndead.Location = new System.Drawing.Point(12, 415);
             this.gbxUndead.Name = "gbxUndead";
-            this.gbxUndead.Size = new System.Drawing.Size(106, 85);
+            this.gbxUndead.Size = new System.Drawing.Size(200, 85);
             this.gbxUndead.TabIndex = 8;
             this.gbxUndead.TabStop = false;
             this.gbxUndead.Text = "Undead Mount";
@@ -856,7 +817,6 @@
             this.Controls.Add(this.gbxResults);
             this.Controls.Add(this.gbxDestination);
             this.Controls.Add(this.gbxOrigin);
-            this.Controls.Add(this.gbxScale);
             this.Controls.Add(this.gbxResting);
             this.Controls.Add(this.gbxMethod);
             this.Controls.Add(this.gbxTerrain);
@@ -870,8 +830,6 @@
             this.gbxMethod.PerformLayout();
             this.gbxResting.ResumeLayout(false);
             this.gbxResting.PerformLayout();
-            this.gbxScale.ResumeLayout(false);
-            this.gbxScale.PerformLayout();
             this.gbxOrigin.ResumeLayout(false);
             this.gbxOrigin.PerformLayout();
             this.gbxDestination.ResumeLayout(false);
@@ -902,9 +860,6 @@
         private System.Windows.Forms.RadioButton radDogsled;
         private System.Windows.Forms.RadioButton radUnrested;
         private System.Windows.Forms.RadioButton radResting;
-        private System.Windows.Forms.GroupBox gbxScale;
-        private System.Windows.Forms.RadioButton radFeet;
-        private System.Windows.Forms.RadioButton radMiles;
         private System.Windows.Forms.GroupBox gbxOrigin;
         private System.Windows.Forms.RadioButton radOriginOther;
         private System.Windows.Forms.RadioButton radOriginLonelywood;
